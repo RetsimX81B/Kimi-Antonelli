@@ -1,0 +1,85 @@
+.retours {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(98, 97, 97);
+}          
+.resultats {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(168, 162, 162);
+}
+.classement {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(98, 97, 97);
+}
+body{ background-image:url("https://i.pinimg.com/564x/e3/b7/13/e3b7131f1b77e9a7e68e575d80bfc2b1.jpg");
+    background-size:cover;
+    font-family: Arial;
+    
+}
+.button-container {
+    display: flex;
+  }
+
+  table td {
+    padding: var(--vms-spacing-small) var(--vms-spacing-average);
+}
+
+table td {
+    padding: var(--vms-spacing-small) var(--vms-spacing-average);
+}
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #918f90
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #d1cccc;
+  }
+  
+  tbody tr {
+    background-image: url(noise.png);
+  }
+  
+
+
+td, th {
+    border: 1px solid black;
+    padding: 15px;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
