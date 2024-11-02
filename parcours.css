@@ -1,0 +1,39 @@
+body{ background-image:url("https://i.pinimg.com/564x/e3/b7/13/e3b7131f1b77e9a7e68e575d80bfc2b1.jpg");
+    background-size:cover;
+    font-family: Arial;
+}
+h1{
+    text-align: center;
+}
+.classement{
+    background-color: rgb(98, 97, 97);
+}
+.resultats {
+    background-color: rgb(168, 162, 162);
+}
+.retours{
+    background-color: rgb(98, 97, 97);
+}
+.button-container {
+    display: flex;
+  }
+.imageparcours{
+    text-align: center;
+}
+.bouton{
+    height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;    
+}
+
+a{
+    color: white
+}

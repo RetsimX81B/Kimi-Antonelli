@@ -1,33 +1,151 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="resultats.css">
+        <link rel="stylesheet" href="main.css">
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+    
         <body>
-            <link rel="stylesheet" href="style3.css">
+         <header>
             <div class="button-container">
-                <button class="retours"><a href="parcours.html">parcours</a></button>  
-                <button class="resultats"><a href="index.html">retours</a></button>
-                <button class="classement"><a href="classement.html">classement</a></button>
+                <button class="parcours " id="parcours"><a href="parcours.html">parcours</a></button>  
+                <button class="retours" id="retours"><a href="index.html">retours</a></button>
+                <button class="classement" id="classement"><a href="classement.html">classement</a></button>
             </div>
+         </header>
+            <br>
+            <input placeholder="mot à rechercher" id="search" class="search">
+            <button onclick="uptade()" class="rechercher">Rechercher</button>
+            <br>                  
            <h1>Kimi Antonelli résultat et petit débrief de course, qualification et séance d'essais</h1>
            <br>
-           Malgrès une première séance d'éssais loupé, Kimi Antonelli à toute la confiance de Tot Wolf le team principale de Mercedes. 
-           <br>
-            En effet, on observe un pilote qui dès ses premiers tours en F1 pousse la voiture dans ses limites.
+           <h1>Ordre des courses :</h1>
+           <div class="btn">
+            <span class="fas fa-bars"></span>
+         </div>
+         <nav class="sidebar">
+          
+            <ul>
+               
+               <li>
+                  <a href="#" class="feat-btn">Grand Prix
+                  <span class="fas fa-caret-down first"></span>
+                  </a>
+                  <ul class="feat-show">
+                     <li><a href="#aus">Australian GP</a></li>
+                     <li><a href="#chi">Chinan GP</a></li>
+                     <li><a href="#jap">Japenese GP</a></li>
+                     <li><a href="#bah">Bahrain GP</a></li>
+                     <li><a href="#sau">Saudi Arabian GP</a></li>
+                     <li><a href="#mia">Miami GP</a></li>
+                     <li><a href="#emi">Emilian Romagna GP</a></li>
+                     <li><a href="#mon">Monaco GP</a></li>
+                     <li><a href="#spa">Spanish GP</a></li>
+                     <li><a href="#can">Canadian GP</a></li>
+                     <li><a href="#ast">Austrian GP</a></li>
+                     <li><a href="#bri">British GP</a></li>
+                     <li><a href="#bel">Belgian</a></li>
+                     <li><a href="#hun">Hungarian GP</a></li>
+                     <li><a href="#dut">Dutch GP</a></li>
+                     <li><a href="#ita">Italian GP</a></li>
+                     <li><a href="#aze">Azebaijan GP</a></li>
+                     <li><a href="#sin">Singapore GP</a></li>
+                     <li><a href="#tin">Austin GP</a></li>
+                     <li><a href="#mex">Mexican GP</a></li>
+                     <li><a href="#bra">Brazilian GP</a></li>
+                     <li><a href="#las">Las Vegas GP</a></li>
+                     <li><a href="#qat">Qatar GP</a></li>
+                     <li><a href="#abu">Yas Marinan GP</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#" class="serv-btn">Essais hivernaux
+                  <span class="fas fa-caret-down second"></span>
+                  </a>
+                  <ul class="serv-show">
+                     <li><a href="#1">Jour 1</a></li>
+                     <li><a href="#2">Jour 2</a></li>
+                  </ul>
+               
+         </nav>
+         <div class="content">
+            <div class="header">
+               
+            </div>
+                       
+            
+         </div>
+           <div class="container">
+            <img src="https://preview.redd.it/mercedes-australian-grand-prix-2024-v0-x44z9f5j2kpc1.jpeg?auto=webp&s=7e13e660fccaa790754159029d5ea58c61eb14d7" class="card"></img>
+            <img src="https://preview.redd.it/mercedes-poster-for-the-2024-chinese-gp-v0-27i7452pn0vc1.jpeg?auto=webp&s=fe2b3a0470d8531a7a37c8656ac6338c7a07c6f5" class="card"></img>
+            <img src="https://images.squarespace-cdn.com/content/v1/52744b67e4b0782c048b666f/1712291286888-ADWHWXYOKWKV24EQDYPF/1+Mercedes+Japan+GP+poster+1.jpg" class="card"></img>
+            <img src="https://preview.redd.it/mercedes-poster-for-the-2024-bahrain-gp-v0-ss9e2ydqbblc1.jpeg?auto=webp&s=19b6fa4496b2f98df60492d9715d0221511fea1b" class="card"></img>
+            <img src="https://preview.redd.it/mercedes-poster-for-the-2024-saudi-arabian-gp-v0-dq7z0kle0pmc1.jpeg?auto=webp&s=528a63c48a8cc0013956bcb9c6153dab45cc50c1" class="card"></img>
+            <img src="https://i.redd.it/hthf56wrgsxc1.jpeg" class="card"></img>
+            <img src="https://preview.redd.it/mercedes-poster-for-2024-emilia-romagna-grand-prix-v0-vaz1ymptnk0d1.jpeg?auto=webp&s=79edc1476dc60a09fc1e0d7c5169ae352942c8a8" class="card"></img>
+            <img src="https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/442476203_943356807586577_7476572145531928471_n.jpg?stp=dst-jpg_s640x640&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=iKTRNqZ8kGsQ7kNvgG9g56L&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=AwhWoLSVLEmrkXDTJQ8U-aM&oh=00_AYAXYpiXDsyMM-0m7PwaKcjt-tv2h88jOqk-PDJdWpm_kw&oe=6727EA14" class="card"></img>
+            <img src="https://preview.redd.it/mercedes-poster-for-the-2024-spanish-gp-v0-z4qxd3qauh7d1.jpeg?width=1080&crop=smart&auto=webp&s=33624371a0e8e63bcb58738503faf8a981d4edff" class="card"></img>
+            <img src="https://preview.redd.it/mercedes-poster-for-2024-canadian-grand-prix-v0-a0n7fku76r4d1.jpeg?auto=webp&s=82c0c6f6247505820353088253f5c14b0dd47e65" class="card"></img>
+            <img src="https://preview.redd.it/mercedes-poster-for-the-2024-austrian-gp-v0-m0179ae2fp8d1.jpeg?auto=webp&s=a6e5a198f2ce04e443cde0ea93e2eb7474375f2c" class="card"></img>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQRfmnMzuVSZrFUVVbPi2xRocdIkc5PaVaCw&s" class="card"></img>
+            
+         </div>
             <br>
-            De plus il avait des entrées de virages beacoup plus rapide que son coéquipier septuple champion du monde.
+            <img class="container">
+                <img src="https://preview.redd.it/mercedes-poster-for-2024-belgian-grand-prix-v0-0qv5hnqy5med1.jpeg?auto=webp&s=31f066636293cd5f50973066600f032d4f7f76f1" class="card"></img>
+                <img src="https://preview.redd.it/mercedes-poster-for-the-2024-hungarian-gp-v0-qimwx186z1dd1.jpeg?width=1080&crop=smart&auto=webp&s=c2d5c3b856b5ebc9091c47fef5ebdbabf4b2ad51" class="card"></img>
+                <img src="https://preview.redd.it/mercedes-poster-for-the-2024-dutch-gp-v0-vaqabra1vzjd1.jpeg?width=1080&crop=smart&auto=webp&s=35d9ed798145fd5bfe981186d1110e9f3f8029c7" class="card"></img>
+                <img src="https://preview.redd.it/mercedes-poster-for-the-2024-italian-gp-v0-are7v19vodld1.jpeg?width=1080&crop=smart&auto=webp&s=3b04c33283735f4cd8b3549441af0d47a56d3ea9" class="card"></img>
+                <img src="https://preview.redd.it/mercedes-poster-for-the-2024-azerbaijan-gp-v0-u71mzladd8od1.jpeg?width=1080&crop=smart&auto=webp&s=fdee6884b91b507620ac1222910f8f874a44abb3" class="card"></img>
+                <img src="https://preview.redd.it/2fvwdfp68qpd1.jpeg?width=640&crop=smart&auto=webp&s=6346f9f18db65a97914de2c2fe417d23b3305534" class="card"></img>
+                <img src="https://pbs.twimg.com/media/GaAOZfqWYAA3bqe?format=jpg&name=large" class="card"></img>
+                <img src="https://pbs.twimg.com/media/GakDvrhXAAAkcJw?format=jpg&name=900x900" class="card"></img>
+                <img src="https://pbs.twimg.com/media/GbIi1tZWYAAITib?format=jpg&name=large" class="card"></img>
+                <img src="" class="card"></img>                
+                <img src="" class="card"></img>
+                <img src="" class="card"></img>
+            </div>
+            <div id="main">
+
+            <h2 id="aus">Australian GP</h2>
+            <h2 id="chi">Chinan GP</h2>
+            <h2 id="jap">Japanesse GP</h2>
+            <h2 id="bah">Bahrain GP</h2>
+            <h2 id="sau">Saudi Arabian GP</h2>
+            <h2 id="mia">Miami GP</h2>
+            <h2 id="emi">Emilian Romagna GP</h2>
+            <h2 id="mon">Monaco GP</h2>
+            <h2 id="spa">Spanish GP</h2>
+            <h2 id="can">Canadian GP</h2>
+            <h2 id="ast">Austrian GP</h2>
+            <h2 id="bri">British GP</h2>
+            <h2 id="bel">Belgian GP</h2>
+            <h2 id="hun">Hungarian GP</h2>
+            <h2 id="dut">Dutch GP</h2>
+            <h2 id="ita">Italian GP</h2>
+            <h2 id="aze">Azerbaijan GP</h2>
+            <h2 id="sin">Singapore GP</h2>
+            <h2 id="tin">Austin GP</h2>
+            <h2 id="mex">Mexican GP</h2>
+            <h2 id="bre">Brezilian GP</h2>
+            <h2 id="las">Las Vegas GP</h2>
+            <h2 id="qat">Qatar GP</h2>
+            <h2 id="abu">Yas Marinan GP</h2>
             <br>
-            Son cransh ne veut donc rien dire sur la suite de sa carrière en Formule 1.
             <br>
-            Nous retrouvons même un team principale confiant qui rassure le jeune prodige : "all good kimi, all good"
-            <br>
-            <img src="https://f1only.fr/wp-content/uploads/2024/08/6-friday-monza-2024-scaled.jpg" height="200">
-            <img src="https://motorsport.nextgen-auto.com/IMG/logo/gwoi5fzwmaapsul.jpg" height="200">
-
-
-
-
-
-
+            <h2 id="1">Essais hivernaux Jour 1</h2>
+            <h2 id="2">Essais Hivernaux Jour 2</h2>
+            </div>
+            </section>
+           </aside>
+            
+            <div><button class="bouton">▲</button></div>
+        </main>
         </body>
-    </head>
+    <script src="./resultats.js">    
+    </script>
+    
 </html>

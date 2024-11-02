@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="classement.css">
+        <title>Kimi Antonelli classement</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
         <body>
-            <link rel="stylesheet" href="style4.css">
+            <main>           
             <div class="button-container">
-                <button class="retours"><a href="parcours.html">parcours</a></button>  
-                <button class="resultats"><a href="resultats.html">resultats</a></button>
-                <button class="classement"><a href="index.html">retours</a></button>
+                <button class="parcours" id="parcours"><a href="parcours.html">parcours</a></button>  
+                <button class="resultats" id="resultats"><a href="resultats.html">resultats</a></button>
+                <button class="retours" id="retours"><a href="index.html">retours</a></button>
             </div>
+            <br>
+            <input placeholder="mot à rechercher" id="search" class="search">
+            <button onclick="uptade()" class="rechercher">Rechercher</button>
+                       
            <h1>Kimi Antonelli classement pilote</h1>
            <br>
            <h2>Classement pilote des dix premiers de F2 2024</h2>
            <br>
-          
+          <div id="main"> 
+
            <table>
            <tr>
             <th>position</th>
@@ -229,8 +238,339 @@
            
 
            <h2>Mercedes classement constructeur</h2>
-           <br>
+           <br> 
+           
+           <table>
+            <tr class="fixed">
+            <th>position</th>
+            <th>équipe</th>
+            <th>points</th> 
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/au-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/cn-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/jp-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/bh-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/sa-2.svg" height="20"></th>                       
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/us-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/it-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/mc-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/es-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/ca-2.svg" height="20"></td>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/at-2.svg" height="20"></td>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/gb-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/be-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/hu-2.svg" height="20"></th>            
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/nl-2.svg" height="20"></td>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/it-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/az-2.svg" height="20"></td>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/sg-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/us-2.svg" height="20"></th>            
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/mx-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/br-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/us-2.svg" height="20"></th>      
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/qa-2.svg" height="20"></th>
+            <th><img src="https://cdn-1.motorsport.com/static/img/cf/ae-2.svg" height="20"></th>     
+            </tr>
+            <div style="overflow: scroll">
+            <tr class="scrollable">
+                <td>-</td>
+                <td>McLaren</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>  
+            <tr>
+                <td>-</td>
+                <td>Red Bull</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>   
+            <tr>
+                <td>-</td>
+                <td>Ferrari</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Mercedes</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Aston Martin</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Visa RB</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Hass</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Williams</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Alpine</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Kick Sauber</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            </div>
 
+           </table>
+           </div>
+           <br>
+           <div><button class="bouton">▲</button></div>
+           
+        </main>
         </body>
-    </head>
+    <script src="./classement.js"> </script>             
+    
+        
 </html>

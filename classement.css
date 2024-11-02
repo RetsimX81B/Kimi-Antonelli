@@ -1,0 +1,128 @@
+.resultats{
+    background-color:rgb(168, 162, 162);
+  }
+.retours {
+      background-color: rgb(98, 97, 97);
+}
+  .parcours {
+      background-color: rgb(98, 97, 97);
+}
+
+body{
+  background-image:url("https://i.pinimg.com/564x/e3/b7/13/e3b7131f1b77e9a7e68e575d80bfc2b1.jpg");
+  background-size:cover;
+  font-family: Arial;
+    
+}
+.button-container {
+    display: flex;
+  }
+
+table td {
+    padding: var(--vms-spacing-small) var(--vms-spacing-average);
+}
+
+table td {
+    padding: var(--vms-spacing-small) var(--vms-spacing-average);
+}
+table {
+    border-collapse: collapse;
+    border-collapse: collapse;
+    margin: 10PX;
+    
+}
+
+td {
+    border: 1px solid black;
+    overflow: auto;
+    
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #918f90
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #d1cccc;
+  }
+  
+  tbody tr {
+    background-image: url(noise.png);
+    
+  }
+  
+
+
+td, th {
+    border: 1px solid black;
+    padding: 15px;
+    
+}
+
+
+.bouton{
+    height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;    
+}
+
+a{
+    color: white
+}
+
+.search{
+    opacity: 6;
+    border-radius: 5px;
+    border: 2px solid rgb(9, 62, 71);
+    
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  .rechercher{
+    background-color: rgb(9, 62, 71);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    cursor:pointer ;
+  } 
+  .search::placeholder {
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 1;
+    animation: glowing 2s infinite;
+  }
+  @keyframes glowing {
+    0% {
+      text-shadow: 0 0 5px rgb(9, 62, 71), 0 0 10pxrgb(9, 62, 71), 0 0 15pxrgb(9, 62, 71);
+    }
+    50% {
+      text-shadow: 0 0 20px rgb(9, 62, 71), 0 0 30px rgb(9, 62, 71), 0 0 40px rgb(9, 62, 71);
+    }
+    100% {
+      text-shadow: 0 0 5px rgb(9, 62, 71), 0 0 10pxrgb(9, 62, 71), 0 0 15pxrgb(9, 62, 71);
+    }
+  }
+  .search:hover {
+    border-color: rgb(9, 62, 71);
+    box-shadow: 0 0 20px rgb(9, 62, 71);
+  }
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}  
